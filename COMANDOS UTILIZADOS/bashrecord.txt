@@ -1,0 +1,280 @@
+
+migue@MiguelPC MINGW64 ~/Desktop
+$ mkdir IbarraMiguel
+
+migue@MiguelPC MINGW64 ~/Desktop
+$ cd IbarraMiguel/
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel
+$ mkdir Hobbies
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel
+$ cd Hobbies/
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/Hobbies
+$ touch 1.txt 2.txt 3.txt
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/Hobbies
+$ cd .
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/Hobbies
+$ cd ..
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel
+$ mkdir "Comidas Preferidas"
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel
+$ cd Comidas\ Preferidas/
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/Comidas Preferidas
+$ touch 1.txt 2.txt 3.txt
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/Comidas Preferidas
+$ cd ..
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel
+$ mkdir "Programas de Tc Favoritos"
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel
+$ cd Programas\ de\ Tc\ Favoritos/
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/Programas de Tc Favoritos
+$ touch 1.txt 2.txt 3.txt
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/Programas de Tc Favoritos
+$ cd ..
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel
+$ mkdir "COMANDOS UTILIZADOS"
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel
+$ CD COM
+COMANDOS UTILIZADOS/ Comidas Preferidas/
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel
+$ cd "COMANDOS UTILIZADOS"
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/COMANDOS UTILIZADOS
+$ touch command.txt
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/COMANDOS UTILIZADOS
+$ cd ..
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel
+$ git init
+Initialized empty Git repository in C:/Users/migue/Desktop/IbarraMiguel/.git/
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (main)
+$ git remote add origin https://github.com/miguesibarra/Parcial1Introduccion.git
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (main)
+$ git status
+starting fsmonitor-daemon in 'C:/Users/migue/Desktop/IbarraMiguel'
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        COMANDOS UTILIZADOS/
+        Comidas Preferidas/
+        Hobbies/
+        Programas de Tc Favoritos/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (main)
+$ git add .
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (main)
+$ git commit -m "examen_AP"
+[main (root-commit) 55eb62b] examen_AP
+ 10 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 COMANDOS UTILIZADOS/command.txt
+ create mode 100644 Comidas Preferidas/1.txt
+ create mode 100644 Comidas Preferidas/2.txt
+ create mode 100644 Comidas Preferidas/3.txt
+ create mode 100644 Hobbies/1.txt
+ create mode 100644 Hobbies/2.txt
+ create mode 100644 Hobbies/3.txt
+ create mode 100644 Programas de Tc Favoritos/1.txt
+ create mode 100644 Programas de Tc Favoritos/2.txt
+ create mode 100644 Programas de Tc Favoritos/3.txt
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 401 bytes | 401.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/miguesibarra/Parcial1Introduccion.git
+ * [new branch]      main -> main
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (main)
+$ git branch hotfix
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (main)
+$ git checkout hotfix
+Switched to branch 'hotfix'
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (hotfix)
+$ cd "COMANDOS UTILIZADOS"
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/COMANDOS UTILIZADOS (hotfix)
+$ cd ..
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (hotfix)
+$ git checkout main
+Switched to branch 'main'
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (main)
+$ cd "COMANDOS UTILIZADOS"
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/COMANDOS UTILIZADOS (main)
+$ nano command.txt
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/COMANDOS UTILIZADOS (main)
+$ cd ..
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (main)
+$ cd Hobbies/
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/Hobbies (main)
+$ mv 1.txt viajes.txt
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/Hobbies (main)
+$ git add .
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/Hobbies (main)
+$ git commit -m "examen_AP"
+[main 1ad70c2] examen_AP
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename Hobbies/{1.txt => viajes.txt} (100%)
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/Hobbies (main)
+$ git push origin hotfix
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'hotfix' on GitHub by visiting:
+remote:      https://github.com/miguesibarra/Parcial1Introduccion/pull/new/hotfi
+x
+remote:
+To https://github.com/miguesibarra/Parcial1Introduccion.git
+ * [new branch]      hotfix -> hotfix
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/Hobbies (main)
+$ cd ..
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   COMANDOS UTILIZADOS/command.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (main)
+$ git checkout hotfix
+Switched to branch 'hotfix'
+M       COMANDOS UTILIZADOS/command.txt
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (hotfix)
+$ git status
+On branch hotfix
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   COMANDOS UTILIZADOS/command.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (hotfix)
+$ git add .
+warning: LF will be replaced by CRLF in COMANDOS UTILIZADOS/command.txt.
+The file will have its original line endings in your working directory
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (hotfix)
+$ git commit -m "examen_AP"
+[hotfix f87a660] examen_AP
+ 1 file changed, 1 insertion(+)
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (hotfix)
+$ git push origin hotfix
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 487 bytes | 487.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/miguesibarra/Parcial1Introduccion.git
+   55eb62b..f87a660  hotfix -> hotfix
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (hotfix)
+$ cd Hobbies/
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/Hobbies (hotfix)
+$ mv 1.txt viajes.txt
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/Hobbies (hotfix)
+$ ls
+2.txt  3.txt  viajes.txt
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/Hobbies (hotfix)
+$ cd ..
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (hotfix)
+$ git status
+On branch hotfix
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Hobbies/1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hobbies/viajes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (hotfix)
+$ git add .
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (hotfix)
+$ git commit -m "examen_AP"
+[hotfix 805adac] examen_AP
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename Hobbies/{1.txt => viajes.txt} (100%)
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (hotfix)
+$ git push
+fatal: The current branch hotfix has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin hotfix
+
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (hotfix)
+$ git push origin hotfix
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 306 bytes | 306.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/miguesibarra/Parcial1Introduccion.git
+   f87a660..805adac  hotfix -> hotfix
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel (hotfix)
+$ cd "COMANDOS UTILIZADOS"
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/COMANDOS UTILIZADOS (hotfix)
+$ touch bashrecord.txt
+
+migue@MiguelPC MINGW64 ~/Desktop/IbarraMiguel/COMANDOS UTILIZADOS (hotfix)
+$ nano bashrecord.txt
