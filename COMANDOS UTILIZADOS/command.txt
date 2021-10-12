@@ -1,0 +1,1 @@
+cp es un comando que se utiliza para realizar copia un archivo y posteriormente indicar la ruta a la cual se copiará. Se puede realizar a través de la indicación del nombre, de la extesión del archivo; y así mismo, se puede cambiar el nombre del archivo o de la copia en el directorio destino. 
